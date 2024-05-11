@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cadastro</h2>
+    <form action="index.html" method="POST" onsubmit="return validatePassword();">
+      <label for="nome_completo">Nome Completo:</label><br>
+      <input type="text" id="nome_completo" name="nome_completo" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="celular">Celular:</label><br>
+      <input type="tel" id="celular" name="celular" pattern="[0-9]{10,11}"><br>
+      
+      <label for="data_nascimento">Data de Nascimento:</label><br>
+      <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+      
+      <label for="senha">Senha:</label><br>
+      <input type="password" id="senha" name="senha" required><br>
+      
+      <label for="confirmar_senha">Confirmar Senha:</label><br>
+      <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>
+      
+      <input type="checkbox" id="aceitar_termos" name="aceitar_termos" required>
+      <label for="aceitar_termos">Eu li e concordo com os Termos de Uso e a Política de Privacidade</label><br>
+      
+      <input type="submit" value="Cadastrar">
+    </form>
+  </div>
+
+<script src="../assets/js/cadastro.js"></script>
+</body>
+</html>
